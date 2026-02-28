@@ -212,56 +212,73 @@ p { margin-bottom: 0.8rem; }
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-@media (max-width: 768px) {
-  nav ul { flex-wrap: wrap; gap: 0.6rem; }
-  main { padding: 1rem 1rem; }
-  h1 { font-size: 1.3rem; }
-  .toc { display: block; }
-  .footer-inner { flex-direction: column; gap: 0.3rem; }
-}
-
-
-/* ── State directory grid ──────────────────────────────────────────────── */
-.state-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
+/* ── Hub pages ────────────────────────────────────────────────────────── */
+.hub-subsection {
   margin: 1.5rem 0;
-}
-
-.state-card {
+  padding: 0.8rem 1rem;
   background: var(--white);
   border: 1px solid var(--border);
-  padding: 0.8rem 1rem;
   border-radius: 2px;
 }
 
-.state-card h3 {
+.hub-subsection h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.15rem 0;
+  border: none;
+  padding: 0;
+}
+
+.hub-subsection p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+.hub-links {
+  list-style: none;
+  font-size: 0.85rem;
+}
+
+.hub-links li { padding: 0.15rem 0; }
+.hub-links a { color: var(--blue-link); }
+.hub-links a:visited { color: var(--blue-link); }
+
+.hub-links .placeholder {
+  color: var(--ash);
+  font-style: italic;
+  font-size: 0.78rem;
+}
+
+.hub-cross-links {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--fog);
+}
+
+.hub-cross-links h2 {
   font-size: 0.92rem;
   font-weight: 700;
   margin: 0 0 0.3rem 0;
   border: none;
+  padding: 0;
 }
 
-.state-card h3 a { color: var(--blue-link); }
-.state-card h3 a:visited { color: var(--blue-link); }
-
-.state-pages {
+.hub-cross-links ul {
   list-style: none;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
 }
 
-.state-pages li {
-  padding: 0.12rem 0;
-}
+.hub-cross-links li { padding: 0.15rem 0; }
+.hub-cross-links a { color: var(--blue-link); }
+.hub-cross-links a:visited { color: var(--blue-link); }
 
-.state-pages a { color: var(--graphite); }
-.state-pages a:hover { color: var(--blue-link); }
+nav ul { flex-wrap: wrap; }
 
 @media (max-width: 768px) {
-  .state-grid { grid-template-columns: 1fr 1fr; }
-}
-
-@media (max-width: 480px) {
-  .state-grid { grid-template-columns: 1fr; }
+  nav ul { gap: 0.6rem; }
+  main { padding: 1rem 1rem; }
+  h1 { font-size: 1.3rem; }
+  .toc { display: block; }
+  .footer-inner { flex-direction: column; gap: 0.3rem; }
 }
