@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url><loc>https://behavioralhealthwiki.com/</loc><lastmod>2026-01-15</lastmod><priority>1.0</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/</loc><lastmod>2026-03-01</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/levels-of-care/</loc><lastmod>2026-03-01</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/find-treatment/</loc><lastmod>2026-03-01</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/</loc><lastmod>2026-03-01</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/parents-family/</loc><lastmod>2026-03-01</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/school-education/</loc><lastmod>2026-03-01</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/</loc><lastmod>2026-03-01</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/laws-privacy-safety/</loc><lastmod>2026-03-01</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/dictionary/</loc><lastmod>2026-03-01</lastmod><priority>0.9</priority></url>
     <url><loc>https://behavioralhealthwiki.com/neurobiology-of-addiction.html</loc><lastmod>2026-01-15</lastmod><priority>0.8</priority></url>
     <url><loc>https://behavioralhealthwiki.com/evidence-based-treatments.html</loc><lastmod>2026-01-12</lastmod><priority>0.8</priority></url>
     <url><loc>https://behavioralhealthwiki.com/pharmacotherapy.html</loc><lastmod>2026-01-10</lastmod><priority>0.8</priority></url>
@@ -76,24 +85,32 @@
     <url><loc>https://behavioralhealthwiki.com/states/michigan/therapeutic-boarding-school.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/michigan/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/minnesota/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/states/minnesota/therapeutic-boarding-school.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/minnesota/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/mississippi/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/mississippi/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/missouri/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/missouri/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/montana/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/states/montana/therapeutic-boarding-school.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/montana/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/nebraska/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/states/nebraska/therapeutic-boarding-school.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/nebraska/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/nevada/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/states/nevada/therapeutic-boarding-school.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/nevada/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/new-hampshire/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/states/new-hampshire/therapeutic-boarding-school.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/new-hampshire/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/new-jersey/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/states/new-jersey/therapeutic-boarding-school.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/new-jersey/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/new-mexico/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/states/new-mexico/therapeutic-boarding-school.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/new-mexico/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/new-york/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/states/new-york/therapeutic-boarding-school.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/new-york/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/north-carolina/residential-treatment.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/states/north-carolina/wilderness-therapy.html</loc><lastmod>2026-02-28</lastmod><priority>0.7</priority></url>
