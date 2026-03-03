@@ -25,6 +25,7 @@
     <url><loc>https://behavioralhealthwiki.com/conditions/borderline-personality-disorder.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/cannabis-use-disorder.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/co-occurring-disorders.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/conduct-disorder.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/dissociative-disorders.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/eating-disorders.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/major-depressive-disorder.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
@@ -54,6 +55,7 @@
     <url><loc>https://behavioralhealthwiki.com/crisis-guides/teen-relapsed-after-treatment.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/crisis-guides/teen-threatening-self-harm.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/crisis-guides/teen-threatening-to-run-away.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/crisis-guides/teen-vaping-crisis.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/dictionary/adverse-childhood-experiences.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/dictionary/biopsychosocial-model.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/dictionary/cognitive-behavioral-therapy.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
@@ -79,6 +81,7 @@
     <url><loc>https://behavioralhealthwiki.com/find-treatment/residential-vs-outpatient.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/find-treatment/transport-services.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/find-treatment/trauma-specific-treatment.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/find-treatment/treatment-center-staff-ratios.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/find-treatment/verify-therapist-credentials.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/find-treatment/when-treatment-isnt-working.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/cost-of-treatment.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
@@ -122,6 +125,7 @@
     <url><loc>https://behavioralhealthwiki.com/levels-of-care/wilderness-therapy.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/anti-anxiety-medications.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/antidepressants-adolescents.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/antipsychotics-youth.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/buprenorphine-suboxone.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/managing-medication-side-effects.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/medication-and-therapy-together.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
@@ -131,6 +135,7 @@
     <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/mood-stabilizers.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/naltrexone.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/psychiatric-medication-management.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/stimulant-medications-adolescents.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/building-support-network.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/codependency-in-families.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/cultural-stigma-mental-health.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
@@ -149,6 +154,7 @@
     <url><loc>https://behavioralhealthwiki.com/parents-family/understanding-treatment-team.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/what-to-expect-first-30-days.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/school-education/academic-impact-mental-health.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/school-education/bullying-and-mental-health.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/school-education/college-planning-after-treatment.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/school-education/educational-advocacy.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/school-education/homeschooling-during-treatment.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
