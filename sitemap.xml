@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url><loc>https://behavioralhealthwiki.com/</loc><lastmod>2026-01-15</lastmod><priority>1.0</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/</loc><lastmod>2026-03-02</lastmod><priority>0.9</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/levels-of-care/</loc><lastmod>2026-03-02</lastmod><priority>0.9</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/find-treatment/</loc><lastmod>2026-03-02</lastmod><priority>0.9</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/</loc><lastmod>2026-03-02</lastmod><priority>0.9</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/parents-family/</loc><lastmod>2026-03-02</lastmod><priority>0.9</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/school-education/</loc><lastmod>2026-03-02</lastmod><priority>0.9</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/</loc><lastmod>2026-03-02</lastmod><priority>0.9</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/laws-privacy-safety/</loc><lastmod>2026-03-02</lastmod><priority>0.9</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/dictionary/</loc><lastmod>2026-03-02</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/</loc><lastmod>2026-03-03</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/levels-of-care/</loc><lastmod>2026-03-03</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/find-treatment/</loc><lastmod>2026-03-03</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/</loc><lastmod>2026-03-03</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/parents-family/</loc><lastmod>2026-03-03</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/school-education/</loc><lastmod>2026-03-03</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/</loc><lastmod>2026-03-03</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/laws-privacy-safety/</loc><lastmod>2026-03-03</lastmod><priority>0.9</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/dictionary/</loc><lastmod>2026-03-03</lastmod><priority>0.9</priority></url>
     <url><loc>https://behavioralhealthwiki.com/neurobiology-of-addiction.html</loc><lastmod>2026-01-15</lastmod><priority>0.8</priority></url>
     <url><loc>https://behavioralhealthwiki.com/evidence-based-treatments.html</loc><lastmod>2026-01-12</lastmod><priority>0.8</priority></url>
     <url><loc>https://behavioralhealthwiki.com/pharmacotherapy.html</loc><lastmod>2026-01-10</lastmod><priority>0.8</priority></url>
@@ -17,22 +17,26 @@
     <url><loc>https://behavioralhealthwiki.com/continuum-of-care.html</loc><lastmod>2026-01-05</lastmod><priority>0.8</priority></url>
     <url><loc>https://behavioralhealthwiki.com/harm-reduction.html</loc><lastmod>2026-01-02</lastmod><priority>0.8</priority></url>
     <url><loc>https://behavioralhealthwiki.com/about.html</loc><lastmod>2025-12-01</lastmod><priority>0.5</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/adhd.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/adhd.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/alcohol-use-disorder.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/anxiety-disorders.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/behavioral-addictions.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/anxiety-disorders.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/behavioral-addictions.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/bipolar-disorder.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/borderline-personality-disorder.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/cannabis-use-disorder.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/co-occurring-disorders.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/eating-disorders.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/cannabis-use-disorder.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/co-occurring-disorders.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/dissociative-disorders.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/eating-disorders.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/major-depressive-disorder.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/neuroscience-of-addiction.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/neuroscience-of-addiction.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/ocd.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/opioid-use-disorder.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/ptsd-trauma-disorders.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/opioid-use-disorder.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/oppositional-defiant-disorder.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/ptsd-trauma-disorders.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/reactive-attachment-disorder.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/schizophrenia-early-onset.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/self-harm.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/conditions/substance-use-disorder.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/conditions/substance-use-disorder.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/conditions/suicidal-ideation.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/crisis-guides/avoid-treatment-scams.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/crisis-guides/cant-afford-treatment.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
@@ -49,6 +53,7 @@
     <url><loc>https://behavioralhealthwiki.com/crisis-guides/teen-refuses-treatment.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/crisis-guides/teen-relapsed-after-treatment.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/crisis-guides/teen-threatening-self-harm.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/crisis-guides/teen-threatening-to-run-away.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/dictionary/adverse-childhood-experiences.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/dictionary/biopsychosocial-model.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/dictionary/cognitive-behavioral-therapy.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
@@ -64,7 +69,9 @@
     <url><loc>https://behavioralhealthwiki.com/dictionary/therapeutic-alliance.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/dictionary/trauma-informed-care.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/find-treatment/accreditation-licensing.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/find-treatment/adolescent-specific-programs.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/find-treatment/aftercare-planning.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/find-treatment/faith-based-treatment.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/find-treatment/how-to-choose-treatment-center.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/find-treatment/lgbtq-affirming-treatment.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/find-treatment/questions-to-ask-treatment-center.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
@@ -78,6 +85,7 @@
     <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/employee-assistance-programs.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/explanation-of-benefits.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/financial-assistance-treatment.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/health-savings-accounts-treatment.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/how-to-appeal-insurance-denial.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/insurance-coverage-behavioral-health.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/insurance-costs-rights/medicaid-behavioral-health.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
@@ -96,15 +104,18 @@
     <url><loc>https://behavioralhealthwiki.com/laws-privacy-safety/minors-consent-to-treatment.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/laws-privacy-safety/patient-safety-regulations.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/laws-privacy-safety/teen-privacy-rights.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/levels-of-care/asam-criteria-explained.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/levels-of-care/adventure-therapy.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/levels-of-care/art-music-therapy.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/levels-of-care/asam-criteria-explained.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/levels-of-care/crisis-stabilization.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/levels-of-care/equine-therapy.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/levels-of-care/harm-reduction.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/levels-of-care/intensive-outpatient.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/levels-of-care/medical-detoxification.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/levels-of-care/intensive-outpatient.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/levels-of-care/medical-detoxification.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/levels-of-care/outpatient-therapy.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/levels-of-care/partial-hospitalization.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/levels-of-care/peer-support-services.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
-    <url><loc>https://behavioralhealthwiki.com/levels-of-care/residential-treatment.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/levels-of-care/residential-treatment.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/levels-of-care/sober-living.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/levels-of-care/telehealth-behavioral-health.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/levels-of-care/therapeutic-boarding-schools.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
@@ -121,9 +132,13 @@
     <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/naltrexone.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/medications-pharmacotherapy/psychiatric-medication-management.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/building-support-network.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/parents-family/codependency-in-families.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/parents-family/cultural-stigma-mental-health.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/family-therapy-explained.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/parents-family/grandparents-raising-teens.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/how-to-talk-to-teen-about-treatment.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/intervention-planning.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
+    <url><loc>https://behavioralhealthwiki.com/parents-family/navigating-divorce-and-treatment.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/parent-self-care.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/relapse-prevention.html</loc><lastmod>2026-03-01</lastmod><priority>0.7</priority></url>
     <url><loc>https://behavioralhealthwiki.com/parents-family/setting-boundaries-addiction.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
