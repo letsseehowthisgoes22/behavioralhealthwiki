@@ -781,7 +781,39 @@ strong { color: var(--obsidian); }
   padding: 1rem 1.2rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.04);
   transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
 }
+
+.tc-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  object-fit: contain;
+  background: var(--mist);
+}
+
+.tc-logo-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  background: var(--mist);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tc-logo-placeholder svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--slate);
+  opacity: 0.45;
+}
+
+.tc-card-body { flex: 1; min-width: 0; }
 
 .tc-card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -947,6 +979,8 @@ strong { color: var(--obsidian); }
   .tc-header-row { flex-direction: column; gap: 0.5rem; }
   .tc-grid { grid-template-columns: 1fr; }
   .tc-card:hover { transform: none; }
+  .tc-logo, .tc-logo-placeholder { width: 40px; height: 40px; }
+  .tc-logo-placeholder svg { width: 20px; height: 20px; }
 }
 
 @media (max-width: 480px) {
