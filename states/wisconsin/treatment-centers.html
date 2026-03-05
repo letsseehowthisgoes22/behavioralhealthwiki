@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treatment Centers in Wisconsin — Behavioral Health Wiki</title>
+    <title>Treatment Centers in Wisconsin &mdash; Behavioral Health Wiki</title>
     <meta name="description" content="Directory of residential treatment centers in Wisconsin for substance use disorders, mental health, and adolescent programs.">
-    <meta property="og:title" content="Treatment Centers in Wisconsin — Behavioral Health Wiki">
+    <meta property="og:title" content="Treatment Centers in Wisconsin &mdash; Behavioral Health Wiki">
     <meta property="og:type" content="article">
     <meta property="og:description" content="Directory of licensed treatment centers in Wisconsin for substance use disorders, mental health, and adolescent behavioral health programs. Find accredited residential and outpatient facilities.">
     <meta property="og:url" content="https://www.behavioralhealthwiki.com/states/wisconsin/treatment-centers.html">
@@ -19,91 +19,175 @@
   "@type": "MedicalWebPage",
   "headline": "Treatment Centers in Wisconsin",
   "datePublished": "2026-03-03",
-  "publisher": { "@type": "Organization", "name": "Behavioral Health Wiki" },
-  "author": { "@type": "Organization", "name": "Behavioral Health Wiki" },
+  "dateModified": "2026-03-05",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Behavioral Health Wiki"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Behavioral Health Wiki"
+  },
   "url": "https://www.behavioralhealthwiki.com/states/wisconsin/treatment-centers.html",
-  "about": { "@type": "MedicalCondition", "name": "Behavioral Health Disorders" },
-  "spatialCoverage": { "@type": "State", "name": "Wisconsin", "containedInPlace": { "@type": "Country", "name": "United States" } }
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Behavioral Health Disorders"
+  },
+  "spatialCoverage": {
+    "@type": "State",
+    "name": "Wisconsin",
+    "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+    }
+  },
+  "mentions": [
+    {
+      "@type": "MedicalOrganization",
+      "name": "Rogers Behavioral Health",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Multiple locations",
+        "addressRegion": "Wisconsin",
+        "addressCountry": "US"
+      },
+      "url": "https://www.rogersbh.org"
+    }
+  ]
 }</script>
 
     <style>
-        .tc-table-wrap {
-            overflow-x: auto;
-            margin-bottom: 2rem;
+        .tc-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
         }
-        .tc-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: var(--font-ui);
-            font-size: 0.88rem;
+        .tc-card {
+            background: var(--white);
+            border: 1px solid var(--fog);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         }
-        .tc-table thead {
-            background: var(--mist);
-        }
-        .tc-table th {
-            text-align: left;
-            padding: 0.7rem 1rem;
-            font-weight: 600;
-            color: var(--charcoal);
-            border-bottom: 2px solid var(--border);
-            font-size: 0.82rem;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-        }
-        .tc-table td {
-            padding: 0.75rem 1rem;
-            border-bottom: 1px solid var(--fog);
-            vertical-align: middle;
-        }
-        .tc-table tbody tr:hover {
-            background: var(--accent-light);
-        }
-        .tc-table__name-cell {
+        .tc-card__header {
             display: flex;
             align-items: center;
-            gap: 0.6rem;
+            gap: 1rem;
+            margin-bottom: 1rem;
         }
-        .tc-table__logo {
-            width: 28px;
-            height: 28px;
-            border-radius: 4px;
+        .tc-card__logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
             flex-shrink: 0;
             background: var(--mist);
         }
-        .tc-table__logo-placeholder {
-            width: 28px;
-            height: 28px;
-            border-radius: 4px;
+        .tc-card__logo-placeholder {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
             flex-shrink: 0;
             background: var(--mist);
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .tc-table__logo-placeholder svg {
-            width: 16px;
-            height: 16px;
+        .tc-card__logo-placeholder svg {
+            width: 20px;
+            height: 20px;
             fill: var(--pewter);
             opacity: 0.5;
         }
-        .tc-table__name {
+        .tc-card__title h3 {
+            font-family: var(--font-ui);
+            font-size: 1.05rem;
             font-weight: 600;
             color: var(--charcoal);
+            margin: 0;
         }
-        .tc-table__link a {
-            color: var(--accent);
-            font-size: 0.82rem;
-        }
-        .tc-table__link a:hover {
-            color: var(--accent-hover);
-        }
-        .tc-table__category {
-            font-size: 0.78rem;
+        .tc-card__location {
+            font-size: 0.85rem;
             color: var(--graphite);
         }
+        .tc-card__description {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--fog);
+        }
+        .tc-card__description p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+        .tc-card__details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+        .tc-card__detail {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+        .tc-card__label {
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--pewter);
+        }
+        .tc-card__detail a {
+            font-size: 0.88rem;
+            color: var(--accent);
+        }
+        .tc-card__detail a:hover {
+            color: var(--accent-hover);
+        }
+        .tc-card__na {
+            font-size: 0.85rem;
+            color: var(--ash);
+            font-style: italic;
+        }
+        .tc-empty {
+            background: var(--mist);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .tc-empty p {
+            color: var(--graphite);
+            font-size: 0.95rem;
+        }
+
+        /* State Summary Section */
+        .tc-state-summary {
+            background: var(--mist);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .tc-state-summary h2 {
+            font-family: var(--font-ui);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin: 0 0 0.75rem;
+        }
+        .tc-state-summary p {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin: 0;
+        }
+
         @media (max-width: 600px) {
-            .tc-table th, .tc-table td { padding: 0.5rem 0.6rem; font-size: 0.8rem; }
-            .tc-table__logo, .tc-table__logo-placeholder { width: 22px; height: 22px; }
+            .tc-card { padding: 1.1rem; }
+            .tc-card__details { grid-template-columns: 1fr; }
+            .tc-card__header { gap: 0.75rem; }
         }
     </style>
 </head>
@@ -161,38 +245,42 @@
         <div class="tc-header-row">
             <div>
                 <h1>Treatment Centers in Wisconsin</h1>
-                <p class="page-info">1 verified program · Behavioral Health Wiki</p>
+                <p class="page-info">1 verified program &middot; Behavioral Health Wiki</p>
             </div>
             <a href="/suggest-edit.html?page=wisconsin-treatment-centers" class="btn-suggest-edit">&#9998; Suggest an Edit</a>
         </div>
 
         <p class="tc-intro">Verified residential treatment centers in Wisconsin for substance use disorders, mental health, and adolescent programs. <strong>Know a program that should be listed?</strong> <a href="/suggest-edit.html">Submit it here</a>.</p>
 
-        <div class="tc-table-wrap">
-        <table class="tc-table">
-            <thead>
-                <tr>
-                    <th>Program Name</th>
-                    <th>Location</th>
-                    <th>Type</th>
-                    <th>Website</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>
-                    <div class="tc-table__name-cell">
-                        <img class="tc-table__logo" src="https://www.google.com/s2/favicons?domain=rogersbh.org&sz=64" alt="" width="28" height="28" loading="lazy">
-                        <span class="tc-table__name">Rogers Behavioral Health</span>
+        <div class="tc-cards">
+            <div class="tc-card">
+                <div class="tc-card__header">
+                    <img class="tc-card__logo" src="https://www.google.com/s2/favicons?domain=rogersbh.org&sz=64" alt="" width="40" height="40" loading="lazy">
+                    <div class="tc-card__title">
+                        <h3>Rogers Behavioral Health</h3>
+                        <span class="tc-card__location">Multiple locations</span>
                     </div>
-                </td>
-                <td>Multiple locations</td>
-                <td class="tc-table__category">Mental Health</td>
-                <td class="tc-table__link"><a href="https://www.rogersbh.org" target="_blank" rel="noopener">rogersbh.org</a></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+                </div>
+                <div class="tc-card__description">
+                    <p><em>Program description coming soon.</em></p>
+                </div>
+                <div class="tc-card__details">
+                    <div class="tc-card__detail">
+                        <span class="tc-card__label">Website</span>
+                        <a href="https://www.rogersbh.org" target="_blank" rel="noopener">rogersbh.org</a>
+                    </div>
+                    <div class="tc-card__detail">
+                        <span class="tc-card__label">Contact</span>
+                        <span class="tc-card__na">Contact info coming soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tc-state-summary">
+            <h2>Behavioral Health Treatment in Wisconsin</h2>
+            <p>Wisconsin provides behavioral health treatment through a diverse network of facilities, including nationally recognized programs. The state's treatment centers offer residential care, outpatient services, and specialized programming for substance use disorders, mental health conditions, and adolescent behavioral health needs. Wisconsin is known for its comprehensive approach to evidence-based treatment and recovery support.</p>
+        </div>
 
         <div class="tc-cta">
             <p><strong>Is something missing or incorrect?</strong> This directory is community-maintained. Help us keep it accurate and complete.</p>
