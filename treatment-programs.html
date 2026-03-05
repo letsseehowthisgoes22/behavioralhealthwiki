@@ -15,6 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <style>
+        /* Override global main constraints for this full-width page */
+        main,
+        main:not(.wide) {
+            max-width: none;
+            padding: 0;
+            border-left: none;
+            padding-left: 0;
+        }
+
         .page-hero {
             background: var(--forest);
             padding: 2.5rem 1.5rem 2rem;
@@ -30,6 +39,7 @@
             font-size: 2rem;
             color: #ffffff;
             margin: 0 0 0.5rem;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
         }
         .hero-inner p {
             font-size: 1.05rem;
@@ -53,7 +63,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            aspect-ratio: 1;
+            min-height: 200px;
             background: #e8f0ec;
             border-radius: 10px;
             border-top: 3px solid #1a7f5a;
@@ -150,7 +160,6 @@
                 grid-template-columns: 1fr;
             }
             .state-card {
-                aspect-ratio: auto;
                 min-height: 140px;
             }
         }
