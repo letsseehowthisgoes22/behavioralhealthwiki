@@ -32,125 +32,113 @@
             margin: 0 0 0.5rem;
         }
         .hero-inner p {
-            font-family: var(--font-ui);
-            font-size: 1rem;
-            color: var(--graphite);
+            font-size: 1.05rem;
+            color: var(--stone);
             margin: 0;
-            line-height: 1.5;
         }
 
-        /* State card grid */
+        .state-grid-section {
+            max-width: var(--wide-width);
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 3rem;
+        }
+
         .state-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.25rem;
-            padding: 2rem 0 3rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
         }
-        @media (max-width: 768px) {
+
+        .state-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            aspect-ratio: 1;
+            background: #e8f0ec;
+            border-radius: 10px;
+            border-top: 3px solid #1a7f5a;
+            padding: 1.2rem;
+            text-decoration: none;
+            color: inherit;
+            box-shadow:
+                0 4px 8px rgba(0,0,0,0.08),
+                0 2px 4px rgba(0,0,0,0.04),
+                0 1px 0 rgba(0,0,0,0.02);
+            transition: all 0.2s ease;
+        }
+
+        .state-card:hover {
+            transform: translateY(-4px);
+            box-shadow:
+                0 8px 20px rgba(0,0,0,0.12),
+                0 4px 8px rgba(0,0,0,0.06);
+        }
+
+        .state-card:visited {
+            color: inherit;
+        }
+
+        .state-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a3c2e;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .state-centers {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.15rem;
+        }
+
+        .center-name {
+            font-size: 0.75rem;
+            color: #5a6b62;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .center-more {
+            font-size: 0.72rem;
+            color: #7a8a82;
+            text-align: center;
+            margin-top: 0.1rem;
+        }
+
+        .center-coming-soon {
+            font-size: 0.75rem;
+            color: #7a8a82;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .state-count {
+            font-size: 0.72rem;
+            color: #7a8a82;
+            text-align: center;
+            margin-top: 0.5rem;
+            padding-top: 0.4rem;
+            border-top: 1px solid rgba(26,127,90,0.15);
+        }
+
+        @media (max-width: 900px) {
             .state-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        @media (max-width: 480px) {
+
+        @media (max-width: 500px) {
             .state-grid {
                 grid-template-columns: 1fr;
             }
-        }
-
-        /* Individual state card */
-        .state-card {
-            display: flex;
-            flex-direction: column;
-            background: var(--white);
-            border: 1px solid var(--fog);
-            border-radius: 10px;
-            padding: 1.25rem 1.25rem 1rem;
-            text-decoration: none;
-            color: inherit;
-            box-shadow: var(--card-shadow);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .state-card:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--card-shadow-hover);
-        }
-
-        .state-card__name {
-            font-family: var(--font-ui);
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--accent);
-            margin: 0 0 0.75rem;
-        }
-
-        .state-card__centers {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            flex: 1;
-            margin-bottom: 0.75rem;
-        }
-
-        .state-card__center {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .state-card__center img {
-            width: 24px;
-            height: 24px;
-            border-radius: 4px;
-            flex-shrink: 0;
-        }
-        .state-card__center span {
-            font-family: var(--font-ui);
-            font-size: 0.85rem;
-            color: var(--charcoal);
-            line-height: 1.3;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        .state-card__icon-placeholder {
-            width: 24px;
-            height: 24px;
-            border-radius: 4px;
-            background: var(--mist);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        .state-card__icon-placeholder svg {
-            width: 16px;
-            height: 16px;
-            color: var(--graphite);
-        }
-
-        .state-card__more {
-            font-family: var(--font-ui);
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: var(--accent);
-            padding-left: 34px;
-        }
-
-        .state-card__empty {
-            font-family: var(--font-ui);
-            font-size: 0.85rem;
-            color: var(--graphite);
-            font-style: italic;
-            margin: 0;
-        }
-
-        .state-card__count {
-            font-family: var(--font-ui);
-            font-size: 0.78rem;
-            color: var(--graphite);
-            border-top: 1px solid var(--fog);
-            padding-top: 0.6rem;
-            margin-top: auto;
+            .state-card {
+                aspect-ratio: auto;
+                min-height: 140px;
+            }
         }
     </style>
     <script type="application/ld+json">
@@ -158,11 +146,62 @@
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "name": "Find Treatment by State",
-        "description": "Browse treatment centers across all 50 U.S. states for substance use disorders, mental health, and adolescent behavioral health programs.",
+        "description": "Browse adolescent and adult behavioral health and addiction treatment centers across all 50 U.S. states.",
         "url": "https://www.behavioralhealthwiki.com/treatment-programs.html",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Behavioral Health Wiki"
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {"@type":"ListItem","position":1,"name":"Alabama","url":"https://www.behavioralhealthwiki.com/states/alabama/treatment-centers.html"},
+                {"@type":"ListItem","position":2,"name":"Alaska","url":"https://www.behavioralhealthwiki.com/states/alaska/treatment-centers.html"},
+                {"@type":"ListItem","position":3,"name":"Arizona","url":"https://www.behavioralhealthwiki.com/states/arizona/treatment-centers.html"},
+                {"@type":"ListItem","position":4,"name":"Arkansas","url":"https://www.behavioralhealthwiki.com/states/arkansas/treatment-centers.html"},
+                {"@type":"ListItem","position":5,"name":"California","url":"https://www.behavioralhealthwiki.com/states/california/treatment-centers.html"},
+                {"@type":"ListItem","position":6,"name":"Colorado","url":"https://www.behavioralhealthwiki.com/states/colorado/treatment-centers.html"},
+                {"@type":"ListItem","position":7,"name":"Connecticut","url":"https://www.behavioralhealthwiki.com/states/connecticut/treatment-centers.html"},
+                {"@type":"ListItem","position":8,"name":"Delaware","url":"https://www.behavioralhealthwiki.com/states/delaware/treatment-centers.html"},
+                {"@type":"ListItem","position":9,"name":"Florida","url":"https://www.behavioralhealthwiki.com/states/florida/treatment-centers.html"},
+                {"@type":"ListItem","position":10,"name":"Georgia","url":"https://www.behavioralhealthwiki.com/states/georgia/treatment-centers.html"},
+                {"@type":"ListItem","position":11,"name":"Hawaii","url":"https://www.behavioralhealthwiki.com/states/hawaii/treatment-centers.html"},
+                {"@type":"ListItem","position":12,"name":"Idaho","url":"https://www.behavioralhealthwiki.com/states/idaho/treatment-centers.html"},
+                {"@type":"ListItem","position":13,"name":"Illinois","url":"https://www.behavioralhealthwiki.com/states/illinois/treatment-centers.html"},
+                {"@type":"ListItem","position":14,"name":"Indiana","url":"https://www.behavioralhealthwiki.com/states/indiana/treatment-centers.html"},
+                {"@type":"ListItem","position":15,"name":"Iowa","url":"https://www.behavioralhealthwiki.com/states/iowa/treatment-centers.html"},
+                {"@type":"ListItem","position":16,"name":"Kansas","url":"https://www.behavioralhealthwiki.com/states/kansas/treatment-centers.html"},
+                {"@type":"ListItem","position":17,"name":"Kentucky","url":"https://www.behavioralhealthwiki.com/states/kentucky/treatment-centers.html"},
+                {"@type":"ListItem","position":18,"name":"Louisiana","url":"https://www.behavioralhealthwiki.com/states/louisiana/treatment-centers.html"},
+                {"@type":"ListItem","position":19,"name":"Maine","url":"https://www.behavioralhealthwiki.com/states/maine/treatment-centers.html"},
+                {"@type":"ListItem","position":20,"name":"Maryland","url":"https://www.behavioralhealthwiki.com/states/maryland/treatment-centers.html"},
+                {"@type":"ListItem","position":21,"name":"Massachusetts","url":"https://www.behavioralhealthwiki.com/states/massachusetts/treatment-centers.html"},
+                {"@type":"ListItem","position":22,"name":"Michigan","url":"https://www.behavioralhealthwiki.com/states/michigan/treatment-centers.html"},
+                {"@type":"ListItem","position":23,"name":"Minnesota","url":"https://www.behavioralhealthwiki.com/states/minnesota/treatment-centers.html"},
+                {"@type":"ListItem","position":24,"name":"Mississippi","url":"https://www.behavioralhealthwiki.com/states/mississippi/treatment-centers.html"},
+                {"@type":"ListItem","position":25,"name":"Missouri","url":"https://www.behavioralhealthwiki.com/states/missouri/treatment-centers.html"},
+                {"@type":"ListItem","position":26,"name":"Montana","url":"https://www.behavioralhealthwiki.com/states/montana/treatment-centers.html"},
+                {"@type":"ListItem","position":27,"name":"Nebraska","url":"https://www.behavioralhealthwiki.com/states/nebraska/treatment-centers.html"},
+                {"@type":"ListItem","position":28,"name":"Nevada","url":"https://www.behavioralhealthwiki.com/states/nevada/treatment-centers.html"},
+                {"@type":"ListItem","position":29,"name":"New Hampshire","url":"https://www.behavioralhealthwiki.com/states/new-hampshire/treatment-centers.html"},
+                {"@type":"ListItem","position":30,"name":"New Jersey","url":"https://www.behavioralhealthwiki.com/states/newjersey/treatment-centers.html"},
+                {"@type":"ListItem","position":31,"name":"New Mexico","url":"https://www.behavioralhealthwiki.com/states/newmexico/treatment-centers.html"},
+                {"@type":"ListItem","position":32,"name":"New York","url":"https://www.behavioralhealthwiki.com/states/newyork/treatment-centers.html"},
+                {"@type":"ListItem","position":33,"name":"North Carolina","url":"https://www.behavioralhealthwiki.com/states/northcarolina/treatment-centers.html"},
+                {"@type":"ListItem","position":34,"name":"North Dakota","url":"https://www.behavioralhealthwiki.com/states/northdakota/treatment-centers.html"},
+                {"@type":"ListItem","position":35,"name":"Ohio","url":"https://www.behavioralhealthwiki.com/states/ohio/treatment-centers.html"},
+                {"@type":"ListItem","position":36,"name":"Oklahoma","url":"https://www.behavioralhealthwiki.com/states/oklahoma/treatment-centers.html"},
+                {"@type":"ListItem","position":37,"name":"Oregon","url":"https://www.behavioralhealthwiki.com/states/oregon/treatment-centers.html"},
+                {"@type":"ListItem","position":38,"name":"Pennsylvania","url":"https://www.behavioralhealthwiki.com/states/pennsylvania/treatment-centers.html"},
+                {"@type":"ListItem","position":39,"name":"Rhode Island","url":"https://www.behavioralhealthwiki.com/states/rhodeisland/treatment-centers.html"},
+                {"@type":"ListItem","position":40,"name":"South Carolina","url":"https://www.behavioralhealthwiki.com/states/southcarolina/treatment-centers.html"},
+                {"@type":"ListItem","position":41,"name":"South Dakota","url":"https://www.behavioralhealthwiki.com/states/southdakota/treatment-centers.html"},
+                {"@type":"ListItem","position":42,"name":"Tennessee","url":"https://www.behavioralhealthwiki.com/states/tennessee/treatment-centers.html"},
+                {"@type":"ListItem","position":43,"name":"Texas","url":"https://www.behavioralhealthwiki.com/states/texas/treatment-centers.html"},
+                {"@type":"ListItem","position":44,"name":"Utah","url":"https://www.behavioralhealthwiki.com/states/utah/treatment-centers.html"},
+                {"@type":"ListItem","position":45,"name":"Vermont","url":"https://www.behavioralhealthwiki.com/states/vermont/treatment-centers.html"},
+                {"@type":"ListItem","position":46,"name":"Virginia","url":"https://www.behavioralhealthwiki.com/states/virginia/treatment-centers.html"},
+                {"@type":"ListItem","position":47,"name":"Washington","url":"https://www.behavioralhealthwiki.com/states/washington/treatment-centers.html"},
+                {"@type":"ListItem","position":48,"name":"West Virginia","url":"https://www.behavioralhealthwiki.com/states/westvirginia/treatment-centers.html"},
+                {"@type":"ListItem","position":49,"name":"Wisconsin","url":"https://www.behavioralhealthwiki.com/states/wisconsin/treatment-centers.html"},
+                {"@type":"ListItem","position":50,"name":"Wyoming","url":"https://www.behavioralhealthwiki.com/states/wyoming/treatment-centers.html"}
+            ]
         }
     }
     </script>
@@ -217,691 +256,485 @@
     </div>
 </header>
 
-<section class="page-hero">
-    <div class="hero-inner">
-        <h1>Find Treatment by State</h1>
-        <p>Browse treatment centers across all 50 states. Click any state to view the full directory.</p>
-    </div>
-</section>
+<main>
+    <section class="page-hero">
+        <div class="hero-inner">
+            <h1>Find Treatment by State</h1>
+            <p>Browse adolescent and adult behavioral health treatment centers across all 50 U.S. states.</p>
+        </div>
+    </section>
 
-<main class="wide">
-    <div class="state-grid">
+    <section class="state-grid-section">
+        <div class="state-grid">
 
-        <!-- Alabama -->
-        <a href="/states/alabama/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Alabama</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=bradfordhealth.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Bradford Health Services</span>
+            <!-- Alabama -->
+            <a href="/states/alabama/treatment-centers.html" class="state-card">
+                <div class="state-name">Alabama</div>
+                <div class="state-centers">
+                    <div class="center-name">Bradford Health Services</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Alaska -->
-        <a href="/states/alaska/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Alaska</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <div class="state-card__icon-placeholder">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v14m18-14v14M6 11h2m-2 4h2m4-4h2m-2 4h2m4-4h2m-2 4h2M6 7V3h12v4"/></svg>
-                    </div>
-                    <span>Alaska Addiction Rehabilitation Services (AARS)</span>
+            <!-- Alaska -->
+            <a href="/states/alaska/treatment-centers.html" class="state-card">
+                <div class="state-name">Alaska</div>
+                <div class="state-centers">
+                    <div class="center-name">Alaska Addiction Rehabilitation Services (AARS)</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Arizona -->
-        <a href="/states/arizona/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Arizona</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=themeadows.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>The Meadows</span>
+            <!-- Arizona -->
+            <a href="/states/arizona/treatment-centers.html" class="state-card">
+                <div class="state-name">Arizona</div>
+                <div class="state-centers">
+                    <div class="center-name">The Meadows</div>
+                    <div class="center-name">Sierra Tucson</div>
+                    <div class="center-more">+1 more</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=sierratucson.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Sierra Tucson</span>
-                </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=cottonwoodtucson.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Cottonwood Tucson</span>
-                </div>
-            </div>
-            <span class="state-card__count">3 centers listed</span>
-        </a>
+                <div class="state-count">3 centers</div>
+            </a>
 
-        <!-- Arkansas -->
-        <a href="/states/arkansas/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Arkansas</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <div class="state-card__icon-placeholder">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v14m18-14v14M6 11h2m-2 4h2m4-4h2m-2 4h2m4-4h2m-2 4h2M6 7V3h12v4"/></svg>
-                    </div>
-                    <span>Recovery Centers of Arkansas</span>
+            <!-- Arkansas -->
+            <a href="/states/arkansas/treatment-centers.html" class="state-card">
+                <div class="state-name">Arkansas</div>
+                <div class="state-centers">
+                    <div class="center-name">Recovery Centers of Arkansas</div>
+                    <div class="center-name">Capstone Treatment Center</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=capstonetreatmentcenter.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Capstone Treatment Center</span>
-                </div>
-            </div>
-            <span class="state-card__count">2 centers listed</span>
-        </a>
+                <div class="state-count">2 centers</div>
+            </a>
 
-        <!-- California -->
-        <a href="/states/california/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">California</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=promises.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Promises Treatment Center</span>
+            <!-- California -->
+            <a href="/states/california/treatment-centers.html" class="state-card">
+                <div class="state-name">California</div>
+                <div class="state-centers">
+                    <div class="center-name">Promises Treatment Center</div>
+                    <div class="center-name">AToN Center</div>
+                    <div class="center-more">+2 more</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=atoncenter.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>AToN Center</span>
-                </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=muirwoodteen.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Muir Wood Adolescent &amp; Family Services</span>
-                </div>
-                <span class="state-card__more">+1 more</span>
-            </div>
-            <span class="state-card__count">4 centers listed</span>
-        </a>
+                <div class="state-count">4 centers</div>
+            </a>
 
-        <!-- Colorado -->
-        <a href="/states/colorado/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Colorado</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=jaywalkerlodge.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Jaywalker Lodge</span>
+            <!-- Colorado -->
+            <a href="/states/colorado/treatment-centers.html" class="state-card">
+                <div class="state-name">Colorado</div>
+                <div class="state-centers">
+                    <div class="center-name">Jaywalker Lodge</div>
+                    <div class="center-name">All Points North (APN) Lodge</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=apn.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>All Points North (APN) Lodge</span>
-                </div>
-            </div>
-            <span class="state-card__count">2 centers listed</span>
-        </a>
+                <div class="state-count">2 centers</div>
+            </a>
 
-        <!-- Connecticut -->
-        <a href="/states/connecticut/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Connecticut</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=highwatchrecovery.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>High Watch Recovery Center</span>
+            <!-- Connecticut -->
+            <a href="/states/connecticut/treatment-centers.html" class="state-card">
+                <div class="state-name">Connecticut</div>
+                <div class="state-centers">
+                    <div class="center-name">High Watch Recovery Center</div>
+                    <div class="center-name">Silver Hill Hospital</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=silverhillhospital.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Silver Hill Hospital</span>
-                </div>
-            </div>
-            <span class="state-card__count">2 centers listed</span>
-        </a>
+                <div class="state-count">2 centers</div>
+            </a>
 
-        <!-- Delaware -->
-        <a href="/states/delaware/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Delaware</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=banyantreatmentcenter.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Banyan Treatment Center &mdash; Delaware</span>
+            <!-- Delaware -->
+            <a href="/states/delaware/treatment-centers.html" class="state-card">
+                <div class="state-name">Delaware</div>
+                <div class="state-centers">
+                    <div class="center-name">Banyan Treatment Center &mdash; Delaware</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Florida -->
-        <a href="/states/florida/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Florida</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=theguesthouseocala.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>The Guest House Ocala</span>
+            <!-- Florida -->
+            <a href="/states/florida/treatment-centers.html" class="state-card">
+                <div class="state-name">Florida</div>
+                <div class="state-centers">
+                    <div class="center-name">The Guest House Ocala</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Georgia -->
-        <a href="/states/georgia/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Georgia</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=talbottcampus.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Talbott Recovery</span>
+            <!-- Georgia -->
+            <a href="/states/georgia/treatment-centers.html" class="state-card">
+                <div class="state-name">Georgia</div>
+                <div class="state-centers">
+                    <div class="center-name">Talbott Recovery</div>
+                    <div class="center-name">Skyland Trail</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=skylandtrail.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Skyland Trail</span>
-                </div>
-            </div>
-            <span class="state-card__count">2 centers listed</span>
-        </a>
+                <div class="state-count">2 centers</div>
+            </a>
 
-        <!-- Hawaii -->
-        <a href="/states/hawaii/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Hawaii</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=hawaiiislandrecovery.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Hawaii Island Recovery</span>
+            <!-- Hawaii -->
+            <a href="/states/hawaii/treatment-centers.html" class="state-card">
+                <div class="state-name">Hawaii</div>
+                <div class="state-centers">
+                    <div class="center-name">Hawaii Island Recovery</div>
+                    <div class="center-name">Pacific Quest</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=pacificquest.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Pacific Quest</span>
-                </div>
-            </div>
-            <span class="state-card__count">2 centers listed</span>
-        </a>
+                <div class="state-count">2 centers</div>
+            </a>
 
-        <!-- Idaho -->
-        <a href="/states/idaho/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Idaho</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=moonlightmountainrecovery.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Moonlight Mountain Recovery</span>
+            <!-- Idaho -->
+            <a href="/states/idaho/treatment-centers.html" class="state-card">
+                <div class="state-name">Idaho</div>
+                <div class="state-centers">
+                    <div class="center-name">Moonlight Mountain Recovery</div>
+                    <div class="center-name">Paradigm Treatment</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=paradigmtreatment.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Paradigm Treatment</span>
-                </div>
-            </div>
-            <span class="state-card__count">2 centers listed</span>
-        </a>
+                <div class="state-count">2 centers</div>
+            </a>
 
-        <!-- Illinois -->
-        <a href="/states/illinois/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Illinois</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=rosecrance.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Rosecrance</span>
+            <!-- Illinois -->
+            <a href="/states/illinois/treatment-centers.html" class="state-card">
+                <div class="state-name">Illinois</div>
+                <div class="state-centers">
+                    <div class="center-name">Rosecrance</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Indiana -->
-        <a href="/states/indiana/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Indiana</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=hickoryhouserecovery.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Hickory House Recovery</span>
+            <!-- Indiana -->
+            <a href="/states/indiana/treatment-centers.html" class="state-card">
+                <div class="state-name">Indiana</div>
+                <div class="state-centers">
+                    <div class="center-name">Hickory House Recovery</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Iowa -->
-        <a href="/states/iowa/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Iowa</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <div class="state-card__icon-placeholder">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v14m18-14v14M6 11h2m-2 4h2m4-4h2m-2 4h2m4-4h2m-2 4h2M6 7V3h12v4"/></svg>
-                    </div>
-                    <span>Powell Chemical Dependency Center</span>
+            <!-- Iowa -->
+            <a href="/states/iowa/treatment-centers.html" class="state-card">
+                <div class="state-name">Iowa</div>
+                <div class="state-centers">
+                    <div class="center-name">Powell Chemical Dependency Center</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Kansas -->
-        <a href="/states/kansas/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Kansas</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=aristarecovery.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Arista Recovery</span>
+            <!-- Kansas -->
+            <a href="/states/kansas/treatment-centers.html" class="state-card">
+                <div class="state-name">Kansas</div>
+                <div class="state-centers">
+                    <div class="center-name">Arista Recovery</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Kentucky -->
-        <a href="/states/kentucky/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Kentucky</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=landmarkrecovery.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Landmark Recovery of Louisville</span>
+            <!-- Kentucky -->
+            <a href="/states/kentucky/treatment-centers.html" class="state-card">
+                <div class="state-name">Kentucky</div>
+                <div class="state-centers">
+                    <div class="center-name">Landmark Recovery of Louisville</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Louisiana -->
-        <a href="/states/louisiana/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Louisiana</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=palmettocenter.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Palmetto Addiction Recovery Center</span>
+            <!-- Louisiana -->
+            <a href="/states/louisiana/treatment-centers.html" class="state-card">
+                <div class="state-name">Louisiana</div>
+                <div class="state-centers">
+                    <div class="center-name">Palmetto Addiction Recovery Center</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Maine -->
-        <a href="/states/maine/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Maine</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=bordencottage.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Borden Cottage</span>
+            <!-- Maine -->
+            <a href="/states/maine/treatment-centers.html" class="state-card">
+                <div class="state-name">Maine</div>
+                <div class="state-centers">
+                    <div class="center-name">Borden Cottage</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Maryland -->
-        <a href="/states/maryland/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Maryland</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=ashleytreatment.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Ashley Addiction Treatment</span>
+            <!-- Maryland -->
+            <a href="/states/maryland/treatment-centers.html" class="state-card">
+                <div class="state-name">Maryland</div>
+                <div class="state-centers">
+                    <div class="center-name">Ashley Addiction Treatment</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Massachusetts -->
-        <a href="/states/massachusetts/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Massachusetts</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=mcleanhospital.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>McLean Hospital</span>
+            <!-- Massachusetts -->
+            <a href="/states/massachusetts/treatment-centers.html" class="state-card">
+                <div class="state-name">Massachusetts</div>
+                <div class="state-centers">
+                    <div class="center-name">McLean Hospital</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Michigan -->
-        <a href="/states/michigan/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Michigan</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=dawnfarm.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Dawn Farm</span>
+            <!-- Michigan -->
+            <a href="/states/michigan/treatment-centers.html" class="state-card">
+                <div class="state-name">Michigan</div>
+                <div class="state-centers">
+                    <div class="center-name">Dawn Farm</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Minnesota -->
-        <a href="/states/minnesota/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Minnesota</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=hazeldenbettyford.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Hazelden Betty Ford Foundation</span>
+            <!-- Minnesota -->
+            <a href="/states/minnesota/treatment-centers.html" class="state-card">
+                <div class="state-name">Minnesota</div>
+                <div class="state-centers">
+                    <div class="center-name">Hazelden Betty Ford Foundation</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Mississippi -->
-        <a href="/states/mississippi/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Mississippi</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=pinegrovetreatment.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Pine Grove Behavioral Health</span>
+            <!-- Mississippi -->
+            <a href="/states/mississippi/treatment-centers.html" class="state-card">
+                <div class="state-name">Mississippi</div>
+                <div class="state-centers">
+                    <div class="center-name">Pine Grove Behavioral Health</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Missouri -->
-        <a href="/states/missouri/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Missouri</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <div class="state-card__icon-placeholder">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v14m18-14v14M6 11h2m-2 4h2m4-4h2m-2 4h2m4-4h2m-2 4h2M6 7V3h12v4"/></svg>
-                    </div>
-                    <span>ARCA</span>
+            <!-- Missouri -->
+            <a href="/states/missouri/treatment-centers.html" class="state-card">
+                <div class="state-name">Missouri</div>
+                <div class="state-centers">
+                    <div class="center-name">ARCA</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Montana -->
-        <a href="/states/montana/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Montana</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=rimrock.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Rimrock Foundation</span>
+            <!-- Montana -->
+            <a href="/states/montana/treatment-centers.html" class="state-card">
+                <div class="state-name">Montana</div>
+                <div class="state-centers">
+                    <div class="center-name">Rimrock Foundation</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Nebraska -->
-        <a href="/states/nebraska/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Nebraska</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=boystown.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Boys Town Residential Treatment Center</span>
+            <!-- Nebraska -->
+            <a href="/states/nebraska/treatment-centers.html" class="state-card">
+                <div class="state-name">Nebraska</div>
+                <div class="state-centers">
+                    <div class="center-name">Boys Town Residential Treatment Center</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Nevada -->
-        <a href="/states/nevada/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Nevada</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <div class="state-card__icon-placeholder">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v14m18-14v14M6 11h2m-2 4h2m4-4h2m-2 4h2m4-4h2m-2 4h2M6 7V3h12v4"/></svg>
-                    </div>
-                    <span>CrossRoads of Southern Nevada</span>
+            <!-- Nevada -->
+            <a href="/states/nevada/treatment-centers.html" class="state-card">
+                <div class="state-name">Nevada</div>
+                <div class="state-centers">
+                    <div class="center-name">CrossRoads of Southern Nevada</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- New Hampshire -->
-        <a href="/states/new-hampshire/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">New Hampshire</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=farnumcenter.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Farnum Center</span>
+            <!-- New Hampshire -->
+            <a href="/states/new-hampshire/treatment-centers.html" class="state-card">
+                <div class="state-name">New Hampshire</div>
+                <div class="state-centers">
+                    <div class="center-name">Farnum Center</div>
+                    <div class="center-name">Green Mountain Treatment Center</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=greenmtntc.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Green Mountain Treatment Center</span>
-                </div>
-            </div>
-            <span class="state-card__count">2 centers listed</span>
-        </a>
+                <div class="state-count">2 centers</div>
+            </a>
 
-        <!-- New Jersey -->
-        <a href="/states/newjersey/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">New Jersey</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=carrierclinic.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Carrier Clinic</span>
+            <!-- New Jersey -->
+            <a href="/states/newjersey/treatment-centers.html" class="state-card">
+                <div class="state-name">New Jersey</div>
+                <div class="state-centers">
+                    <div class="center-name">Carrier Clinic</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- New Mexico -->
-        <a href="/states/newmexico/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">New Mexico</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=shadowmountainrecovery.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Shadow Mountain Recovery</span>
+            <!-- New Mexico -->
+            <a href="/states/newmexico/treatment-centers.html" class="state-card">
+                <div class="state-name">New Mexico</div>
+                <div class="state-centers">
+                    <div class="center-name">Shadow Mountain Recovery</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- New York -->
-        <a href="/states/newyork/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">New York</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=armsacres.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Arms Acres</span>
+            <!-- New York -->
+            <a href="/states/newyork/treatment-centers.html" class="state-card">
+                <div class="state-name">New York</div>
+                <div class="state-centers">
+                    <div class="center-name">Arms Acres</div>
+                    <div class="center-name">The Dunes East Hampton</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=theduneseasthampton.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>The Dunes East Hampton</span>
-                </div>
-            </div>
-            <span class="state-card__count">2 centers listed</span>
-        </a>
+                <div class="state-count">2 centers</div>
+            </a>
 
-        <!-- North Carolina -->
-        <a href="/states/northcarolina/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">North Carolina</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=pavillon.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Pavillon</span>
+            <!-- North Carolina -->
+            <a href="/states/northcarolina/treatment-centers.html" class="state-card">
+                <div class="state-name">North Carolina</div>
+                <div class="state-centers">
+                    <div class="center-name">Pavillon</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- North Dakota -->
-        <a href="/states/northdakota/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">North Dakota</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=prairie-stjohns.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Prairie St. John&#39;s</span>
+            <!-- North Dakota -->
+            <a href="/states/northdakota/treatment-centers.html" class="state-card">
+                <div class="state-name">North Dakota</div>
+                <div class="state-centers">
+                    <div class="center-name">Prairie St. John&rsquo;s</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Ohio -->
-        <a href="/states/ohio/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Ohio</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=glenbeigh.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Glenbeigh</span>
+            <!-- Ohio -->
+            <a href="/states/ohio/treatment-centers.html" class="state-card">
+                <div class="state-name">Ohio</div>
+                <div class="state-centers">
+                    <div class="center-name">Glenbeigh</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Oklahoma -->
-        <a href="/states/oklahoma/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Oklahoma</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=valleyhope.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Valley Hope &mdash; Cushing</span>
+            <!-- Oklahoma -->
+            <a href="/states/oklahoma/treatment-centers.html" class="state-card">
+                <div class="state-name">Oklahoma</div>
+                <div class="state-centers">
+                    <div class="center-name">Valley Hope &mdash; Cushing</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Oregon -->
-        <a href="/states/oregon/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Oregon</h2>
-            <div class="state-card__centers">
-                <p class="state-card__empty">Directory coming soon</p>
-            </div>
-            <span class="state-card__count">Submit a center &rarr;</span>
-        </a>
+            <!-- Oregon -->
+            <a href="/states/oregon/treatment-centers.html" class="state-card">
+                <div class="state-name">Oregon</div>
+                <div class="state-centers">
+                    <div class="center-coming-soon">Directory coming soon</div>
+                </div>
+                <div class="state-count">0 centers</div>
+            </a>
 
-        <!-- Pennsylvania -->
-        <a href="/states/pennsylvania/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Pennsylvania</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=caron.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Caron Treatment Centers</span>
+            <!-- Pennsylvania -->
+            <a href="/states/pennsylvania/treatment-centers.html" class="state-card">
+                <div class="state-name">Pennsylvania</div>
+                <div class="state-centers">
+                    <div class="center-name">Caron Treatment Centers</div>
+                    <div class="center-name">Geisinger Marworth</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=geisinger.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Geisinger Marworth</span>
-                </div>
-            </div>
-            <span class="state-card__count">2 centers listed</span>
-        </a>
+                <div class="state-count">2 centers</div>
+            </a>
 
-        <!-- Rhode Island -->
-        <a href="/states/rhodeisland/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Rhode Island</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=butler.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Butler Hospital</span>
+            <!-- Rhode Island -->
+            <a href="/states/rhodeisland/treatment-centers.html" class="state-card">
+                <div class="state-name">Rhode Island</div>
+                <div class="state-centers">
+                    <div class="center-name">Butler Hospital</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- South Carolina -->
-        <a href="/states/southcarolina/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">South Carolina</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <div class="state-card__icon-placeholder">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v14m18-14v14M6 11h2m-2 4h2m4-4h2m-2 4h2m4-4h2m-2 4h2M6 7V3h12v4"/></svg>
-                    </div>
-                    <span>Palmetto Lowcountry Behavioral Health</span>
+            <!-- South Carolina -->
+            <a href="/states/southcarolina/treatment-centers.html" class="state-card">
+                <div class="state-name">South Carolina</div>
+                <div class="state-centers">
+                    <div class="center-name">Palmetto Lowcountry Behavioral Health</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- South Dakota -->
-        <a href="/states/southdakota/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">South Dakota</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=keystonetreatment.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Keystone Treatment Center</span>
+            <!-- South Dakota -->
+            <a href="/states/southdakota/treatment-centers.html" class="state-card">
+                <div class="state-name">South Dakota</div>
+                <div class="state-centers">
+                    <div class="center-name">Keystone Treatment Center</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Tennessee -->
-        <a href="/states/tennessee/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Tennessee</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=cumberlandheights.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Cumberland Heights</span>
+            <!-- Tennessee -->
+            <a href="/states/tennessee/treatment-centers.html" class="state-card">
+                <div class="state-name">Tennessee</div>
+                <div class="state-centers">
+                    <div class="center-name">Cumberland Heights</div>
+                    <div class="center-name">Onsite Workshops / Milestones</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=onsiteworkshops.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Onsite Workshops / Milestones</span>
-                </div>
-            </div>
-            <span class="state-card__count">2 centers listed</span>
-        </a>
+                <div class="state-count">2 centers</div>
+            </a>
 
-        <!-- Texas -->
-        <a href="/states/texas/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Texas</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=lahacienda.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>La Hacienda Treatment Center</span>
+            <!-- Texas -->
+            <a href="/states/texas/treatment-centers.html" class="state-card">
+                <div class="state-name">Texas</div>
+                <div class="state-centers">
+                    <div class="center-name">La Hacienda Treatment Center</div>
+                    <div class="center-name">J. Flowers Health Institute</div>
+                    <div class="center-more">+1 more</div>
                 </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=jflowershealth.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>J. Flowers Health Institute</span>
-                </div>
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=altaloma.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Alta Loma Transformational Services</span>
-                </div>
-            </div>
-            <span class="state-card__count">3 centers listed</span>
-        </a>
+                <div class="state-count">3 centers</div>
+            </a>
 
-        <!-- Utah -->
-        <a href="/states/utah/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Utah</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=cirquelodge.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Cirque Lodge</span>
+            <!-- Utah -->
+            <a href="/states/utah/treatment-centers.html" class="state-card">
+                <div class="state-name">Utah</div>
+                <div class="state-centers">
+                    <div class="center-name">Cirque Lodge</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Vermont -->
-        <a href="/states/vermont/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Vermont</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=brattlebororetreat.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Brattleboro Retreat</span>
+            <!-- Vermont -->
+            <a href="/states/vermont/treatment-centers.html" class="state-card">
+                <div class="state-name">Vermont</div>
+                <div class="state-centers">
+                    <div class="center-name">Brattleboro Retreat</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Virginia -->
-        <a href="/states/virginia/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Virginia</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=farleycenter.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Farley Center</span>
+            <!-- Virginia -->
+            <a href="/states/virginia/treatment-centers.html" class="state-card">
+                <div class="state-name">Virginia</div>
+                <div class="state-centers">
+                    <div class="center-name">Farley Center</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Washington -->
-        <a href="/states/washington/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Washington</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=sundownmranch.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Sundown M Ranch</span>
+            <!-- Washington -->
+            <a href="/states/washington/treatment-centers.html" class="state-card">
+                <div class="state-name">Washington</div>
+                <div class="state-centers">
+                    <div class="center-name">Sundown M Ranch</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- West Virginia -->
-        <a href="/states/westvirginia/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">West Virginia</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=highlandhosp.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Highland Hospital</span>
+            <!-- West Virginia -->
+            <a href="/states/westvirginia/treatment-centers.html" class="state-card">
+                <div class="state-name">West Virginia</div>
+                <div class="state-centers">
+                    <div class="center-name">Highland Hospital</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Wisconsin -->
-        <a href="/states/wisconsin/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Wisconsin</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=rogersbh.org&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Rogers Behavioral Health</span>
+            <!-- Wisconsin -->
+            <a href="/states/wisconsin/treatment-centers.html" class="state-card">
+                <div class="state-name">Wisconsin</div>
+                <div class="state-centers">
+                    <div class="center-name">Rogers Behavioral Health</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-        <!-- Wyoming -->
-        <a href="/states/wyoming/treatment-centers.html" class="state-card">
-            <h2 class="state-card__name">Wyoming</h2>
-            <div class="state-card__centers">
-                <div class="state-card__center">
-                    <img src="https://www.google.com/s2/favicons?domain=wyomingrecovery.com&amp;sz=64" alt="" width="24" height="24" loading="lazy">
-                    <span>Wyoming Recovery</span>
+            <!-- Wyoming -->
+            <a href="/states/wyoming/treatment-centers.html" class="state-card">
+                <div class="state-name">Wyoming</div>
+                <div class="state-centers">
+                    <div class="center-name">Wyoming Recovery</div>
                 </div>
-            </div>
-            <span class="state-card__count">1 center listed</span>
-        </a>
+                <div class="state-count">1 center</div>
+            </a>
 
-    </div>
+        </div>
+    </section>
 </main>
 
 <footer class="site-footer">
