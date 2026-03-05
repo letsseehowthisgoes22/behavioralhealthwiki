@@ -25,6 +25,87 @@
   "about": { "@type": "MedicalCondition", "name": "Behavioral Health Disorders" },
   "spatialCoverage": { "@type": "State", "name": "Missouri", "containedInPlace": { "@type": "Country", "name": "United States" } }
 }</script>
+
+    <style>
+        .tc-table-wrap {
+            overflow-x: auto;
+            margin-bottom: 2rem;
+        }
+        .tc-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: var(--font-ui);
+            font-size: 0.88rem;
+        }
+        .tc-table thead {
+            background: var(--mist);
+        }
+        .tc-table th {
+            text-align: left;
+            padding: 0.7rem 1rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            border-bottom: 2px solid var(--border);
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .tc-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--fog);
+            vertical-align: middle;
+        }
+        .tc-table tbody tr:hover {
+            background: var(--accent-light);
+        }
+        .tc-table__name-cell {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .tc-table__logo {
+            width: 28px;
+            height: 28px;
+            border-radius: 4px;
+            flex-shrink: 0;
+            background: var(--mist);
+        }
+        .tc-table__logo-placeholder {
+            width: 28px;
+            height: 28px;
+            border-radius: 4px;
+            flex-shrink: 0;
+            background: var(--mist);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tc-table__logo-placeholder svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--pewter);
+            opacity: 0.5;
+        }
+        .tc-table__name {
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+        .tc-table__link a {
+            color: var(--accent);
+            font-size: 0.82rem;
+        }
+        .tc-table__link a:hover {
+            color: var(--accent-hover);
+        }
+        .tc-table__category {
+            font-size: 0.78rem;
+            color: var(--graphite);
+        }
+        @media (max-width: 600px) {
+            .tc-table th, .tc-table td { padding: 0.5rem 0.6rem; font-size: 0.8rem; }
+            .tc-table__logo, .tc-table__logo-placeholder { width: 22px; height: 22px; }
+        }
+    </style>
 </head>
 <body>
     <header class="site-header">
@@ -80,46 +161,45 @@
         <div class="tc-header-row">
             <div>
                 <h1>Treatment Centers in Missouri</h1>
-                <p class="page-info">From Behavioral Health Wiki, the evidence-based reference</p>
+                <p class="page-info">1 verified program · Behavioral Health Wiki</p>
             </div>
             <a href="/suggest-edit.html?page=missouri-treatment-centers" class="btn-suggest-edit">&#9998; Suggest an Edit</a>
         </div>
 
-        <p class="tc-intro">This directory lists verified residential treatment centers in Missouri, organized by program type. Facilities are evaluated on clinical quality, accreditation, and verified reputation. <strong>Know a program that should be listed?</strong> <a href="/suggest-edit.html">Submit it here</a>.</p>
+        <p class="tc-intro">Verified residential treatment centers in Missouri for substance use disorders, mental health, and adolescent programs. <strong>Know a program that should be listed?</strong> <a href="/suggest-edit.html">Submit it here</a>.</p>
 
-        <div class="toc">
-            <div class="toc-title">Contents</div>
-            <ol>
-                <li><a href="#sud">SUD / Dual Diagnosis Programs</a></li>
-                <li><a href="#mh">Mental Health Programs</a></li>
-                <li><a href="#ado">Adolescent Programs</a></li>
-            </ol>
-        </div>
-
-        <h2 id="sud">SUD / Dual Diagnosis Programs</h2>
-<div class="tc-grid">
-<div class="tc-card">
-  <div class="tc-logo-placeholder"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7v1h1v11H2v1h20v-1h-1V8h1V7L12 2zm-3 12H7v-2h2v2zm0-4H7V8h2v2zm4 4h-2v-2h2v2zm0-4h-2V8h2v2zm4 4h-2v-2h2v2zm0-4h-2V8h2v2z"/></svg></div>
-  <div class="tc-card-body">
-    <h3 class="tc-name">ARCA</h3>
-    <p class="tc-city">St. Louis</p>
-  </div>
-</div>
-</div>
-
-        <h2 id="mh">Mental Health Programs</h2>
-<p class="tc-none">No programs currently listed. <a href="/suggest-edit.html">Submit a facility</a> to help us grow this directory.</p>
-
-        <h2 id="ado">Adolescent Programs</h2>
-<p class="tc-none">No programs currently listed. <a href="/suggest-edit.html">Submit a facility</a> to help us grow this directory.</p>
-
+        <div class="tc-table-wrap">
+        <table class="tc-table">
+            <thead>
+                <tr>
+                    <th>Program Name</th>
+                    <th>Location</th>
+                    <th>Type</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="tc-table__name-cell">
+                        <div class="tc-table__logo-placeholder"><svg viewBox="0 0 24 24"><path d="M3 21h18M3 7v14m18-14v14M6 11h2m-2 4h2m4-4h2m-2 4h2m4-4h2m-2 4h2M6 7V3h12v4"/></svg></div>
+                        <span class="tc-table__name">ARCA</span>
+                    </div>
+                </td>
+                <td>St. Louis</td>
+                <td class="tc-table__category">SUD / Dual Diagnosis</td>
+                <td class="tc-table__link"><span style="color:var(--pewter)">—</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
         <div class="tc-cta">
             <p><strong>Is something missing or incorrect?</strong> This directory is community-maintained. Help us keep it accurate and complete.</p>
             <a href="/suggest-edit.html?page=missouri-treatment-centers" class="btn-suggest-edit">&#9998; Suggest an Edit</a>
         </div>
 
-        <p class="tc-back"><a href="/states/missouri/">&larr; Back to Missouri Overview</a></p>
+        <p class="tc-back"><a href="/states/missouri/">&larr; Back to Missouri Overview</a> &nbsp;|&nbsp; <a href="/treatment-programs.html">&larr; All States</a></p>
     </main>
 
     <footer class="site-footer">
